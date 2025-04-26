@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif+JP:wght@200..900&family=Poiret+One&display=swap');
+
+
+a{
+    text-decoration: none;
+    color: #121212;
+}
+body{
+    background: #757f9a;
+    background: linear-gradient(90deg,#757f9a 0%, #d7dde8 80%);
+}
+
+.nav{
+    display: flex;
+    justify-content: start;
+    margin-left: 35px;
+    padding: 10px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style-type: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: all 0.5s ;
+}
+.nav ul li:hover{
+    transform: scale(1.1);
+}
+.nav ul li a{
+    font-family: "Jura", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    transition: all 0.5s ;
+}
+.nav ul li a:hover{
+    color: #007ac1;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-container{
+    width: 450px;
+    height: 600px;
+    margin-left: 30px;
+    font-style: normal;
+  animation: fadein 5s ease-in forwards;
+}
+
+.info-container h2{
+    margin-top: 120px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1.5;
+   
+}
+.info-container h3{
+    font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: -3px;
+}
+.info-container p{
+    border-bottom: dotted 1px #121212;
+    font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap:20px;
+    max-width: 600px;
+    margin: 30px auto;
+    flex-shrink: 0; 
+    flex-grow: 1;
+}
+.box {
+    background-color: #233a5a;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    box-shadow: 10px 10px 14px 2px rgba(15,15,15,0.69);
+-webkit-box-shadow: 10px 10px 14px 2px rgba(15,15,15,0.69);
+-moz-box-shadow: 10px 10px 14px 2px rgba(15,15,15,0.69);
+transition: all 1s ease-in-out;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.text{
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+.text a:hover{
+    text-decoration: underline;
+}
+.item {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.big{
+    grid-row: span 2;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.item3{
+    animation: slidein-left 1s ease-in forwards;
+}
+.item1{
+    animation: slidein-down 2s ease-in forwards;
+}
+.item2{
+    animation: slidein-up 2s ease-in forwards;
+}
+
+.footer-container{
+    background-color: #121212;
+    width: 100%;
+    height: 100px;
+}
+.footer-container p{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 65px;
+}
+
+@keyframes slidein-left{
+    from{
+        transform: translateX(700px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes slidein-down{
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes slidein-up{
+    from{
+        transform: translateY(500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
