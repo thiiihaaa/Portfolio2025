@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thiha-portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10b4bd48d5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -12,9 +13,49 @@
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                
+                <li><a class="contact" href="#">Contact</a></li>
+                <div class="overlay"></div>
+                <div class="popup">
+                    <h1>Contact Information</h1>
+                    <div class="mail">
+                        <a href="#">
+                            <p><i class="fa-solid fa-envelope"></i></p>
+                        <p class="link">thihatz1702@gmail.com</p>
+
+                        </a>
+                    </div>
+                    <div class="phnum">
+                        <a href="#">
+                            <p><i class="fa-solid fa-phone-volume"></i></p>
+                        <p class="link">07040845037</p>
+                        </a>
+                        
+                    </div>
+                    <div class="instagram">
+                        <a href="#">
+                            <p><i class="fa-brands fa-square-instagram"></i></p>
+                        <p class="link">Instagram</p>
+                        </a>
+                        
+                    </div>
+                    <div class="youtube">
+                        <a href="https://youtube.com/@twenty35ssubtitle99?si=Bja7sr9JF7TisR9U">
+                            <p><i class="fa-brands fa-youtube"></i></p>
+                            <p class="link">Youtube</p>
+                        </a>  
+                    </div>
+                    <div class="address">
+                        <a href="https://maps.app.goo.gl/i3W72FMmS3xaeKsF9">
+                            <p><i class="fa-solid fa-address-card"></i></p>
+                        <p class="link">〒260-0014 千葉県千葉市中央区本千葉町8-19</p>
+                        </a>
+                        
+                    </div>
+
+                    <button class="closeBtn">&times;</button>
+                </div>
             </ul>
+
         </div>
 
     </nav>
@@ -22,7 +63,7 @@
 
     <main class="container">
         <div class="info-container">
-            <div class="text"><h2>Thiha Tint Zaw <br><span style="color:#007ac1;">Portfolio</span></h2>
+            <div class="info"><h2>Thiha Tint Zaw <br><span style="color:#006ebd">Portfolio</span></h2>
                 <h3>ティハティンゾウ <span style="margin-left: 20px;">ポートフォリオ</span></h3>
                 <p><a style="text-decoration: none;" href="mailto:thihatz1702@gmail.com">thihatz1702@gmail.com</a></p>
                 <p><a style="text-decoration: none;" href="07040845037">07040845037</a></p>
@@ -33,13 +74,13 @@
 
         <div class="grid-container">
             <div class="item item1">
-                <div class="box"></div>
+                <div class="box"><img src="img/intopic1.png" alt="img1"></div>
                 <div class="text"><a href="#">自己紹介</a></div>
             </div>
 
-            <div class="overlay"></div>
-            <div class="popup">
-                <button class="closeBtn">&times;</button>
+            <div class="overlay1"></div>
+            <div class="popup1">
+                <button class="closeBtn1">&times;</button>
                 <h1>自己紹介</h1>
                 <p>My Name is Thiha and I'm form Myanamr.</p>
             </div>
@@ -50,7 +91,7 @@
                 <div class="text"><a href="#">ウェブサイト一覧</a></div>
             </div>
             <div class="item item2">
-                <div class="box"></div>
+                <div class="box"><img src="img/designpic1.jpeg" alt="design-pic"></div>
                 <div class="text"><a href="#">デザイン一覧</a></div>
             </div>
         </div>
