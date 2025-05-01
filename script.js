@@ -31,5 +31,31 @@ document.querySelector(".overlay1").addEventListener("click", function() {
 // end of popup2
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll(".fade-in");
+    let lastScrollY = window.scrollY;
+
+    function checkVisibility() {
+        const currentScrollY = window.scrollY;
+
+        fadeElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+
+            if (rect.top < window.innerHeight - 100) {
+                element.classList.add("show");
+                element.classList.remove("hide"); // Ensures it remains visible
+            } else if (currentScrollY < lastScrollY) { // Scrolling up
+                element.classList.remove("show");
+                element.classList.add("hide"); // Hides when scrolling up
+            }
+        });
+
+        lastScrollY = currentScrollY; // Update last scroll position
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility(); // Run on page load
+});
+
 
 
