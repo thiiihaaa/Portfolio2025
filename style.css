@@ -154,6 +154,7 @@ h1{
   font-size: 25px;
   letter-spacing: -3px;
   margin-bottom: 50px;
+
 }
 .info-container p{
     border-bottom: dotted 1px #121212;
@@ -161,6 +162,7 @@ h1{
   font-optical-sizing: auto;
   font-weight: 350;
   padding-top: 10px;
+ 
 }
 
 .grid-container{
@@ -332,9 +334,10 @@ overflow: hidden;
   margin-top: 50px;
   letter-spacing: 1px;
   line-height: 25px;
+  color: #333231;
 }
 .design-title:hover{
-    background-color: #fff;
+    background-color: aliceblue;
 }
 .details-btn {
     align-self: center;
@@ -347,7 +350,7 @@ overflow: hidden;
     border-width: 2px;
     box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
     box-sizing: border-box;
-    color: #41403e;
+    color: #333231;
     cursor: pointer;
     display: inline-block;
     font-family: "Noto Serif JP", serif;
@@ -393,6 +396,18 @@ overflow: hidden;
     transform: translateY(10px); 
 }
 
+/*website page start*/
+.site1{
+    width: 70%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.site1 video{
+    width: 100%;
+}
+
+
+
 @keyframes slidein-left{
     from{
         transform: translateX(700px);
@@ -427,3 +442,101 @@ overflow: hidden;
     }
 }
 
+/*Responsive desgin for phone*/
+@media (max-width: 600px) {
+    .nav-wrapped{
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    .logo{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .logo img{
+        width: 20px;
+        height: auto;
+    }
+    .info-container{
+        margin: 0 auto;
+    width: 500px;
+    height: auto;
+    font-style: normal;
+  animation: fadein 5s ease-in forwards;
+}
+
+.info-container h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    transition: all 1s;
+}
+.info-container h2:hover{
+    letter-spacing: 4px;
+}
+.info-container h3{
+    font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: -3px;
+  margin-bottom: 30px;
+
+}
+.info-container p{
+    border-bottom: dotted 1px #121212;
+    font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  padding-top: 10px;
+  font-size: 13px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:10px;
+    max-width: 500px;
+    margin: 30px auto;
+    flex-shrink: 0; 
+    flex-grow: 1;
+}
+.item3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.box {
+    background-color: #233a5a;
+    width: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    box-shadow: 10px 10px 14px 2px rgba(15,15,15,0.69);
+-webkit-box-shadow: 10px 10px 14px 2px rgba(15,15,15,0.69);
+-moz-box-shadow: 10px 10px 14px 2px rgba(15,15,15,0.69);
+transition: all 1s ease-in-out;
+overflow: hidden;
+}
+
+.big{
+    grid-row: span 2;
+    padding-top: none;
+}
+
+  
+}
