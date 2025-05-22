@@ -31,6 +31,7 @@ document.querySelector(".overlay1").addEventListener("click", function() {
 // end of popup2
 
 
+//scroll
 document.addEventListener("DOMContentLoaded", function() {
     const fadeElements = document.querySelectorAll(".fade-in");
     let lastScrollY = window.scrollY;
@@ -56,6 +57,13 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", checkVisibility);
     checkVisibility(); // Run on page load
 });
+//scroll end
+
+//hamburger cross menu
+
+document.querySelector(".hamburger").addEventListener('click',function(){
+    document.querySelector(".hamburger").classList.toggle("active");
+})
 
 
 
