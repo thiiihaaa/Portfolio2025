@@ -462,6 +462,17 @@ width: 100%;
     }
 }
 
+@keyframes menu-bar-slideup{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-800px);
+    }
+}
+
+
+
 /*Responsive desgin for phone*/
 @media (max-width: 768px) { 
   
@@ -492,6 +503,10 @@ width: 100%;
         font-size: 25px;
         font-style: normal;
         font-weight: bold;
+    }
+
+    .phone-menu-slideup{
+        animation: menu-bar-slideup 0.5s ease-out;
     }
 
 

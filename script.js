@@ -66,9 +66,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const phoneMenu = document.querySelector(".phone-menu");
 
     hamburger.addEventListener("click", function () {
-        phoneMenu.style.display = phoneMenu.style.display === "none" || phoneMenu.style.display === "" ? "block" : "none";
-        hamburger.classList.toggle("active");
+        if (!phoneMenu.classList.contains("active")) {
+            phoneMenu.style.display = "block"; 
+            phoneMenu.classList.add("active");
+            hamburger.classList.add("active");
+        } else {
+            phoneMenu.classList.add("phone-menu-slideup"); // Add slide-up effect
+            setTimeout(() => {
+                phoneMenu.style.display = "none"; 
+                phoneMenu.classList.remove("active", "phone-menu-slideup"); // Remove classes after animation
+            }, 500); // Match animation duration
+            hamburger.classList.remove("active");
+        }
     });
 });
-
-
