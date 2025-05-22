@@ -61,9 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //hamburger cross menu
 
-document.querySelector(".hamburger").addEventListener('click',function(){
-    document.querySelector(".hamburger").classList.toggle("active");
-})
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const phoneMenu = document.querySelector(".phone-menu");
 
+    hamburger.addEventListener("click", function () {
+        phoneMenu.style.display = phoneMenu.style.display === "none" || phoneMenu.style.display === "" ? "block" : "none";
+        hamburger.classList.toggle("active");
+    });
+});
 
 
