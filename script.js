@@ -80,3 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+document.querySelector(".dropdown > a").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    let dropdownMenu = this.nextElementSibling;
+    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+});
+
