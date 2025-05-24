@@ -15,7 +15,6 @@ document.querySelector(".overlay").addEventListener("click", function() {
 
 
 
-
 document.querySelector(".item1").addEventListener("click", function(){
     document.querySelector(".overlay1").style.display = "block";
     document.querySelector(".popup1").style.display = "block";
@@ -80,3 +79,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
