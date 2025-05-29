@@ -505,6 +505,8 @@ width: 100%;
     .hidden-contact li{
         padding: 3px;
         border: solid 1px #046196;
+        border-radius: 30px;
+        background-color: #d7dde85b;
     }
     .hidden-contact li a{
         display: flex;
