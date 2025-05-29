@@ -402,7 +402,7 @@ width: 100%;
     line-height: 23px;
     outline: none;
     padding: .75rem;
-    margin: 30px 0 0 350px;
+    margin: 50px 0 0 350px;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     border-bottom-left-radius: 15px 255px;
@@ -412,6 +412,8 @@ width: 100%;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    position: absolute;
+    z-index: 2;
   }
   
   .details-btn:hover {
@@ -818,7 +820,7 @@ width: 100%;
 }
 
     .details-btn {
-        margin: 20px 0 15px 250px;
+        margin: 20px 0 20px 250px;
         font-size: 10px;
          display: inline-block
     }
