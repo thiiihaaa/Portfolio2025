@@ -84,8 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //phone-contact hide n show
 document.addEventListener("DOMContentLoaded", function() {
-const contact = document.querySelector(".contact");
+const contact = document.querySelector(".ph-contact");
 const hiddenCt = document.querySelector(".hidden-contact");
+
+hiddenCt.style.display = "none";
 
 contact.addEventListener("click",()=>{
     hiddenCt.style.display = hiddenCt.style.display === "none" ?"block" : "none";
