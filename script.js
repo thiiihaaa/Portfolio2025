@@ -63,12 +63,13 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger");
     const phoneMenu = document.querySelector(".phone-menu");
+    
 
     hamburger.addEventListener("click", function () {
         if (!phoneMenu.classList.contains("active")) {
             phoneMenu.style.display = "block"; 
             phoneMenu.classList.add("active");
-            hamburger.classList.add("active");
+            hamburger.classList.add("active", "fixed");
         } else {
             phoneMenu.classList.add("phone-menu-slideup"); // Add slide-up effect
             setTimeout(() => {
@@ -81,9 +82,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.querySelector(".dropdown > a").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent default link behavior
-    let dropdownMenu = this.nextElementSibling;
-    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+//phone-contact hide n show
+document.addEventListener("DOMContentLoaded", function() {
+const contact = document.querySelector(".contact");
+const hiddenCt = document.querySelector(".hidden-contact");
+
+contact.addEventListener("click",()=>{
+    hiddenCt.style.display = hiddenCt.style.display === "none" ?"block" : "none";
 });
+
+});
+
+
 
