@@ -819,8 +819,16 @@ width: 100%;
   color: #333231;
 }
 
+.no12 p{
+    margin-top: 30px;
+}
+
+.jpn-text{
+    font-size: 13px;
+}
+
     .details-btn {
-        margin: 20px 0 20px 250px;
+        margin: 20px 0 20px 230px;
         font-size: 10px;
          display: inline-block
     }
