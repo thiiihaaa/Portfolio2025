@@ -97,3 +97,17 @@ contact.addEventListener("click",()=>{
 
 
 
+const designTitles = document.querySelectorAll(".design-title");
+
+designTitles.forEach((designTt) => {
+  const updatePosition = (event) => {
+    const x = event.pageX - designTt.offsetLeft;
+    const y = event.pageY - designTt.offsetTop;
+
+    designTt.style.setProperty("--xPos", x + "px");
+    designTt.style.setProperty("--yPos", y + "px");
+  };
+
+  designTt.addEventListener("mouseover", updatePosition);
+  designTt.addEventListener("touchstart", updatePosition);
+});

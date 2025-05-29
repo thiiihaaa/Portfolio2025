@@ -347,9 +347,40 @@ width: 100%;
   line-height: 25px;
   color: #333231;
 }
-.design-title:hover{
-    background-color: aliceblue;
+
+
+.design-title {
+  background-color: #ffffff00;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  overflow: hidden;
 }
+
+.design-title span {
+  position: relative;
+  z-index: 1;
+}
+
+.design-title::before {
+  content: "";
+  position: absolute;
+  background-color: aliceblue;
+  width: 0;
+  height: 0;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.design-title:hover::before {
+  width: 1700px;
+  height: 1500px;
+}
+
 .details-btn {
     align-self: center;
     background-color: #ffffff00;
@@ -508,7 +539,7 @@ width: 100%;
         border-radius: 30px;
         background-color: #d7dde85b;
     }
-    .hidden-contact li a{
+    .hidden-contact li a{  
         display: flex;
         font-size: 13px;
     }
