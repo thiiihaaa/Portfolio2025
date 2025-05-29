@@ -804,7 +804,7 @@ width: 100%;
 
 .design-title h1{
   font-size: 25px;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
 }
 .design-title p{
@@ -814,6 +814,7 @@ width: 100%;
   font-size: 15px;
   margin-left: 50px;
   margin-top: 50px;
+  margin-bottom: 15px;
   letter-spacing: 1px;
   line-height: 25px;
   color: #333231;
@@ -828,7 +829,7 @@ width: 100%;
 }
 
     .details-btn {
-        margin: 20px 0 20px 230px;
+        margin: 0 10px 50px 230px;
         font-size: 10px;
          display: inline-block
     }
