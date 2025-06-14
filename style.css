@@ -441,13 +441,103 @@ width: 100%;
 }
 
 /*website page start*/
-.site1{
-    width: 70%;
-    overflow: hidden;
+.projects-pg .h1{
+    font-family: "Poiret One", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: 50px 0;
+}
+.projects-pg h2{
+     font-family: "Nova Round", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-left: 150px;
+
+}
+
+
+.sites{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    width: 80%;
+    margin: 20px auto 150px auto;
+    position: relative;
+}
+.sites video{
+    width: 100%;
     border-radius: 30px;
 }
-.site1 video{
-    width: 100%;
+
+.sites video:hover{
+   filter: brightness(80%);
+}
+
+.vid-overlay{
+    position: absolute;
+    bottom: 20px;
+    left : 25px;
+     width: fit-content;
+     height: fit-content;
+    background: rgba(0, 0, 0, 0.368);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    display: none;
+}
+.sites:hover .vid-overlay {
+    display: block; 
+}
+
+.vid-overlay h2{
+        font-family: "Nova Round", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  margin: 5px 0 5px 10px;
+}
+
+.vid-overlay p{
+    color: white;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.vid-overlay ul{
+    display: flex;
+    margin-left: 20px;
+}
+.vid-overlay ul li{
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: #031e2e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid-overlay ul li a{
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+
 }
 
 
